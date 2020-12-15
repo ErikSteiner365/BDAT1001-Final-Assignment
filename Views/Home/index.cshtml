@@ -1,0 +1,13 @@
+﻿<h1>Home Page</h1>
+
+<head>Thanks for checking out my website</head>
+<head>
+</head>
+
+<a href="/home/login">User Login</a>
+<a href="/home/register">New User</a>
+
+@if (User.Identity.IsAuthenticated)
+{
+    <a href="/api/tweets">Tweet Information</a>
+}
